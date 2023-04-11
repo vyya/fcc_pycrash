@@ -8,7 +8,7 @@ print(dogs.pop()) # remove last item from the list and return it
 print(dogs)
 dogs.insert(1, 'inserted') # insert item on a certain position
 dogs[2:2] = ['slicer', 'dicer'] # insert multiple items using slicer
-print(sorted(dogs, key=str.lower))
+print(sorted(dogs, key=str.lower)) # sorting with sorted function, not changing original list
 print(dogs)
 dogscopy = dogs[:] # making a copy of the whole list
 dogs.sort(key=str.lower, reverse=True) # sorting, str.lower ignores the case of string 
