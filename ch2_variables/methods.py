@@ -16,3 +16,11 @@ print(google_url.removeprefix('https://'))
 filename = 'python_notes.txt'
 removesuf = filename.removesuffix('.txt')
 print(removesuf)
+
+# undescores in numbers
+universe_age = 14_000_000_000
+print(universe_age)
+
+# multiple assignment
+x, y, z = 0, 1, 3
+print(x, y, z)
