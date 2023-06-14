@@ -20,7 +20,7 @@ print(friends)
 print(popped_friend)
 best_friend = friends.pop(1)
 print(f'My best friend was {best_friend.title()}')
-no_more = 'sanya'
+no_more ='sanya'
 friends.remove(no_more)
 print(f'\t{no_more.title()} is not my friend anymore')
 print(friends)
