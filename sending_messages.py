@@ -8,4 +8,5 @@ def send_messages(messages, sent_messages):
 
 messages = ['Hi there!', 'Look out!', 'Morning sir', 'Astalavista baby']
 sent_messages = []
-send_messages(messages, sent_messages)
+send_messages(messages[:], sent_messages)
+print(messages)
