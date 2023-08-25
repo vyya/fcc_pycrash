@@ -1,4 +1,4 @@
-from pizza import make_pizza
+from pizza import make_pizza as mp
 
-make_pizza(16, 'beef')
-make_pizza(21, 'mushrooms', 'tomatoes', 'cheese', 'rukkola')
+mp(16, 'beef')
+mp(21, 'mushrooms', 'tomatoes', 'cheese', 'rukkola')
