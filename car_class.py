@@ -18,12 +18,15 @@ class Car:
             print("You can't roll back an odometer")
 
     def increment_odometer(self, miles):
-        self.odometer_reading += miles
+        if miles >= 0:
+            self.odometer_reading += miles
+        else:
+            print(f'You cannot roll back an odometer')
 
 my_car = Car('audi', 'A8', 2022)
 my_car.description()
 my_car.odometer_reading = 45
-my_car.update_odometer(60)
+my_car.update_odometer(55)
 my_car.read_odometer()
-my_car.increment_odometer(100)
+my_car.increment_odometer(-100)
 my_car.read_odometer()
