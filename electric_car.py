@@ -52,6 +52,13 @@ class Battery:
     def describe_battery(self):
         """Print a statement describing a battery size """
         print(f'This car has a {self.battery_size}-kWh battery.')
+    def get_range(self):
+        """Print a statement about a range this battery can provide"""
+        if self.battery_size == 75:
+            range = 150
+        elif self.battery_size == 90:
+            range = 195
+        print(f'This car can go {range} miles on a full charge.')
 
 
         
@@ -60,4 +67,4 @@ my_tesla = ElectricCar('tesla', 'obsidian', 2022 )
 print(my_tesla.get_descriptive_name())
 my_tesla.fill_gas_tank()
 my_tesla.battery.describe_battery()    
-
+my_tesla.battery.get_range()
