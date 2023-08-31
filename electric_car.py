@@ -6,6 +6,7 @@ class Car:
         self.model = model
         self.year = year
         self.odometer_reading = 0
+        self.gas_tank_level = 20
 
     def get_descriptive_name(self):
         long_name = f"{self.year} {self.make} {self.model}"
@@ -24,6 +25,10 @@ class Car:
 
     def increment_odometer(self, miles):
         self.odometer_reading += miles
+    
+    def fill_gas_tank(self):
+        print(f'Safety level of gas is {self.gas_tank_level}.')
+
 
 
 class ElectricCar(Car):
@@ -36,13 +41,17 @@ class ElectricCar(Car):
 
     def describe_battery(self):
         """Print a statement describing a battery size"""
-        print(f'This car has a {self.battery_size}-kWh battery size')
+        print(f'This car has a {self.battery_size}-kWh battery size.')
+
+    def fill_gas_tank(self):
+        """Electric cars don't have gas tank"""
+        print('This car doesn\'t have a gas tank!')
 
         
 
 my_tesla = ElectricCar('tesla', 'obsidian', 2022 )
 print(my_tesla.get_descriptive_name())
 my_tesla.describe_battery()
-
+my_tesla.fill_gas_tank()
     
 
