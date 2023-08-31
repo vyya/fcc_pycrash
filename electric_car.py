@@ -47,6 +47,13 @@ class ElectricCar(Car):
         """Electric cars don't have gas tank"""
         print('This car doesn\'t have a gas tank!')
 
+class Battery:
+    """An attempt to model a battery for an electric car"""
+    def __init__(self, battery_size = 40 ):
+        """initialize the batterrie's attribute"""
+        self.battery_size = battery_size
+
+
         
 
 my_tesla = ElectricCar('tesla', 'obsidian', 2022 )
