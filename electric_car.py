@@ -52,6 +52,7 @@ class Battery:
     def describe_battery(self):
         """Print a statement describing a battery size """
         print(f'This car has a {self.battery_size}-kWh battery.')
+
     def get_range(self):
         """Print a statement about a range this battery can provide"""
         if self.battery_size == 75:
