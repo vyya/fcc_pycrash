@@ -9,10 +9,10 @@ my_tesla = car.ElectricCar('Tesla', 'Lotus', 2019)
 print(my_tesla.get_descriptive_name())'''
 
 from car import Car
-from electric_car import ElectricCar
+from electric_car import ElectricCar as EC
 
 my_leaf = Car('nissan', 'leaf', 2022)
 print(my_leaf.get_descriptive_name())
 
-my_zeekr = ElectricCar('zeekr', 'bomb', 2021)
+my_zeekr = EC('zeekr', 'bomb', 2021)
 print(my_zeekr.get_descriptive_name())
