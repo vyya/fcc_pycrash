@@ -1,0 +1,4 @@
+In Python you can perform various mathematic operation, create and assign varia
+bles, do a different iterative operations, looping through a various data,
+There are different ways to store a data: list, dictionaries, tuples.
+Also we are able to do some manipulations with strings.
